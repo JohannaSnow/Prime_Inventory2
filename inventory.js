@@ -1,18 +1,23 @@
 
 console.log('inventory.js sourced');
 //global variables (vars)
-var Inventory = 'none';
+var inventory = [];
 var selectedColor = 'none';
 var selectedSize = 'none';
 
 var addItem = function (color, name, size) {
   console.log('adding item' + name + '' + color + '' + size);
+  var item = new Object();
+  item.color=color;
+  item.size=size;
+  item.name=name;
   //create object
   // push into array
+  inventory.push(item);
   // show updated inventory
+  console.log(inventory);
   // add addItem
 };
-
 //end getSizeSelection}
 
 var searchInventory = function () {
